@@ -6,6 +6,4 @@ public interface RoleServiceInterface {
 
 	Role addRole(Role role);
 
-	String[] getAllRoles();
-
 }

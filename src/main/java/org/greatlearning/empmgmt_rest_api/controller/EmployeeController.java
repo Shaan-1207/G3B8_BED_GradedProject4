@@ -62,7 +62,7 @@ public class EmployeeController {
 	@DeleteMapping("/deleteEmployeeById/{id}")
 	public ResponseEntity<String> deleteUser(@PathVariable("id") Integer id) {
 		employeeServiceImpl.deleteEmployeeById(id);
-		return new ResponseEntity<>("User with id "+id+" has been successfully deleted!", HttpStatus.OK);
+		return new ResponseEntity<>("User ID "+id+" has been successfully deleted!", HttpStatus.OK);
 	}
 
 

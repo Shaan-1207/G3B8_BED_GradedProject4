@@ -4,6 +4,7 @@ import org.greatlearning.empmgmt_rest_api.entity.Role;
 import org.greatlearning.empmgmt_rest_api.repo.RoleRepo;
 import org.greatlearning.empmgmt_rest_api.service.RoleServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

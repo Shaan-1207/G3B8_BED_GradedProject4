@@ -28,10 +28,11 @@ public class Employee {
 	@Column(name = "email")
 	private String email;
 
-	//Constructor
-	public Employee() {}
-	
-	//Args Constructor
+	// Constructor
+	public Employee() {
+	}
+
+	// Args Constructor
 	public Employee(String firstName, String lastName, String email) {
 		super();
 		this.firstName = firstName;
@@ -39,7 +40,7 @@ public class Employee {
 		this.email = email;
 	}
 
-	//Getter/Setter
+	// Getter/Setter
 	public int getId() {
 		return id;
 	}

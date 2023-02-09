@@ -24,7 +24,7 @@ public class SwaggerConfig {
 		return new ApiInfoBuilder().title(" Employee Managment Application API")
 				.description("Employee Management Rest Api based Web application, "
 						+ "where we will be developing CRUD(Create, Read, Update and Delete) "
-						+ "functionality along with Sorting and some concepts of security")
+						+ "functionality along with Sorting and concepts of Basic Auth and some basic concept of Security")
 				.version("1.0").build();
 	}
 }

@@ -23,7 +23,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	@Autowired
 	private UserDetailsService userDetailsService;
 
-	//Authorization and authentication setup
+	//Authorization setup
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 		auth.userDetailsService(this.userDetailsService);
@@ -39,7 +39,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		web.ignoring().antMatchers("/h2-console/**");
 
 	}
-
+	
+	//Authentication Setup
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.cors().disable();

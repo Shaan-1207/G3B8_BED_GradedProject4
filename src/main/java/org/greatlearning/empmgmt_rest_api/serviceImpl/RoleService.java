@@ -11,15 +11,10 @@ public class RoleService implements RoleServiceInterface {
 
 	@Autowired
 	private RoleRepo roleRepository;
-	
 
 	@Override
 	public Role addRole(Role role) {
 		return roleRepository.saveAndFlush(role);
 	}
 
-	@Override
-	public String[] getAllRoles() {
-		return (String[]) roleRepository.findAll().toArray();
-	}
 }

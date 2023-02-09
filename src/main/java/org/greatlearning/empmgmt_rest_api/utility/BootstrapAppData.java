@@ -39,18 +39,18 @@ public class BootstrapAppData {
 	@Transactional
 	public void usersData(ApplicationReadyEvent readyEvent) {
 
-		Employee shahid = new Employee("Mr", "shahid", "shahid@gmail.com");
-		Employee rupali = new Employee("Rupali", "Singh", "rupali@gmail.com");
-		Employee seema = new Employee("Seema", "Soni", "seema@gmail.com");
+		Employee shahid = new Employee("Mr", "Shahid", "shahid@gmail.com");
+		Employee animesh = new Employee("Animesh", "Das", "animesh.das@gmail.com");
+		Employee mrigendra = new Employee("Mrigendra", "Kumar", "mrigendra@gmail.com");
 		Employee sanju = new Employee("Sanju", "Punfer", "punfer@gmail.com");
-		Employee neha = new Employee("Neha", "Rohilla", "neha@gmail.com");
+		Employee pragati = new Employee("Pragati", "Bhadouriya", "pragati@gmail.com");
 	
 
 		this.employeeRepo.save(shahid);
-		this.employeeRepo.save(rupali);
-		this.employeeRepo.save(seema);
+		this.employeeRepo.save(animesh);
+		this.employeeRepo.save(mrigendra);
 		this.employeeRepo.save(sanju);
-		this.employeeRepo.save(neha);
+		this.employeeRepo.save(pragati);
 	}
 
 	//Dummy users

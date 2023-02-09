@@ -41,7 +41,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Override
 	public Object deleteEmployeeById(Integer id) {
 		employeeRepo.deleteById(id);
-		return "employee deleted with id - " + id;
+		return "employee deleted with id";
 	}
 
 	// Sorted by name
